@@ -1,0 +1,52 @@
+/* HOME HEADER LINKS */
+
+.home {
+    display: flex; /* all links next to each other */
+    flex-direction: column; /* takes up entire row */
+    height: 100vh; /* total height */
+}
+
+.home__header {
+    display: flex;
+    justify-content: space-between; /* links are seperated on each side */
+    padding: 20px 30px; /* padding top/bottom left/right */
+    align-items: center; /* centred horizontally & vertixally */
+}
+
+.home__header a {
+    margin-right: 20px;
+    text-decoration: inherit; /* so it doesnt look like links, get rid of underline */
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+}
+
+.home__header a:hover {
+    text-decoration: underline; /* when hovered over, it underlines */
+}
+
+.home__headerRight {
+    display: flex; /* next to each other */
+    align-items: center; /* all centred */
+    min-width: 13vw; /* responsive */
+    justify-content: space-between;
+}
+
+.home__headerRight > .MuiSvgIcon-root {
+    margin-right: 20px; /* so icon isnt squished next to apps */
+}
+
+
+
+/* SEARCH BAR */
+
+.home__body {
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+.home__body > img {
+    object-fit: contain;
+    height: 100px;
+}
